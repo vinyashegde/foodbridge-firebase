@@ -19,60 +19,117 @@
              
 </head>
 <body>
-    <div class="form">
-        <!-- Name  -->
-        <div class="fullname">
-            <label for="fullname">Name</label>
-            <input
-              type="fullname"
-              name="fullname"
-              id="fullname"
-              placeholder="Name"
-            />
-          </div>
-        <!-- Email  -->
-        <div class="email">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Write your email"
-          />
-        </div>
-
-        <!-- Location  -->
-        <div class="location">
-            <label for="location">Location</label>
-            <input
-              type="location"
-              name="location"
-              id="location"
-              placeholder="Location"
-            />
-          </div>
-
-        <!-- passWord -->
-        <div class="pass">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-          />
-        </div>
-
-        
-  
-        <!-- Sign Up button -->
-        <button id="submit-btn" onclick="signUp()">Sign Up</button>
-        <!-- Sign In option -->
-        <p>Already have an account ?</p>
-        <span><a href="signin.html">Sign In</a></span>
-      </div>
-
+   
+      <div class="row">
+        <div class="col s6"> <div class="form">
+            <h5><b>User</b></h5>
+            <!-- Name  -->
+            <div class="fullname">
+                <label for="fullname">Name</label>
+                <input
+                  type="fullname"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Name"
+                />
+              </div>
+            <!-- Email  -->
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Write your email"
+              />
+            </div>
+    
+            <!-- Location  -->
+            <div class="location">
+                <label for="location">Location</label>
+                <input
+                  type="location"
+                  name="location"
+                  id="location"
+                  placeholder="Location"
+                />
+              </div>
+    
+            <!-- passWord -->
+            <div class="pass">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
+            </div>
+    
+            
       
+            <!-- Sign Up button -->
+            <button id="submit-btn" onclick="UsersignUp()">Sign Up</button>
+            <!-- Sign In option -->
+            <p>Already have an account ?</p>
+            <span><a href="signin.html">Sign In</a></span>
+          </div>
+    </div>
+        <div class="col s6"> <div class="form">
+            <h5><b>Organization</b></h5>
+            <!-- Name  -->
+            <div class="orgfullname">
+                <label for="orgfullname">Name</label>
+                <input
+                  type="orgfullname"
+                  name="orgfullname"
+                  id="orgfullname"
+                  placeholder="Name"
+                />
+              </div>
+            <!-- Email  -->
+            <div class="orgemail">
+              <label for="orgemail">Email</label>
+              <input
+                type="orgemail"
+                name="orgemail"
+                id="orgemail"
+                placeholder="Write your email"
+              />
+            </div>
+    
+            <!-- Location  -->
+            <div class="orglocation">
+                <label for="orglocation">Location</label>
+                <input
+                  type="orglocation"
+                  name="orglocation"
+                  id="orglocation"
+                  placeholder="Location"
+                />
+              </div>
+    
+            <!-- passWord -->
+            <div class="orgpassword">
+              <label for="orgpassword">Password</label>
+              <input
+                type="orgpassword"
+                name="orgpassword"
+                id="orgpassword"
+                placeholder="password"
+              />
+            </div>
+    
+            
+      
+            <!-- Sign Up button -->
+            <button id="submit-btn" onclick="OrgsignUp()">Sign Up</button>
+            <!-- Sign In option -->
+            <p>Already have an account ?</p>
+            <span><a href="signin.html">Sign In</a></span>
+          </div>
+    </div>
+      </div>
 
       <script src="app.js"></script>
 </body>
