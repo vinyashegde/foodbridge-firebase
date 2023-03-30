@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="food.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
     <style>
         /* Style the donation form */
         .Donation {
@@ -137,25 +140,26 @@
         <div class="div2"> </div>
         <div class="div3">
             <div class="Donation">
-                <form action="/donation" method="post">
-                    <label for="">Food In Kg</label>
+                <form>
+                    <label>Food In Kg</label>
                     <input type="text" name="AmountOfFood" id="">
                     <br><br>
 
-                    <label for="">Location</label>
+                    <label>Location</label>
                     <input type="text" name="location" id="">
                     <br><br>
 
-                    <label for="">Date</label>
+                    <label>Date</label>
                     <input type="text" name="date" id="">
                     <br><br>
 
-                    <label for="">Your Phone Number</label>
+                    <label>Your Phone Number</label>
                     <input type="text" name="phoneNumber" id="">
                     <br><br>
 
-                    <button>Donate</button>
+                    <!-- <button id="myButton">Donate</button> -->
                 </form>
+                <button id="myButton">Donate</button>
             </div>
         </div>
         <div class="div4"></div>
@@ -200,7 +204,8 @@
         });
     </script>
 
-    <!-- <script src="app.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="donation.js"></script>
 </body>
 
 </html>
