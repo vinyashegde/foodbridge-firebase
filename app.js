@@ -230,3 +230,22 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
+
+// function for showing user details in user profile
+const userDetails = document.querySelector('.user-info')
+async function getuserInfo(userID){
+  const userInfoSnap = await firebase.firestore()
+  .collection('users')
+  .doc(userID)
+  .get()
+
+  const userInfo = userInfoSnap.data()
+  if(userInfo){
+    userDetails.innerHTML = `
+    <h3>${userInfo.fullname}</h3>
+    <h3>${userInfo.email}</h3>
+    <h3>${userInfo.location}</h3>
+    `
+  }
+}
+
