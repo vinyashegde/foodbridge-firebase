@@ -7,16 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="food.css">
     <link rel="stylesheet" href="login.css">
+    
     <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database-compat.js"></script>
     
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style>
         .parent {
@@ -58,7 +56,7 @@
       <div class="div1">
         <div class="navbar">
             <div class="logo-icon"><img src="https://cdn.discordapp.com/attachments/1086598800191275069/1086654421880029234/THRIVE_FOODS-removebg-preview_1.png" alt="Girl in a jacket" width="500" height="600"></div>
-            <a href="food.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
             <a href="#contact">Contact us</a>
@@ -81,8 +79,8 @@
               </form>
               <form class="login-form">
                 <h3>User</h3>
-                <input type="text" id="fullname" placeholder="username"/>
-                <input type="password" id="password" placeholder="password"/>
+                <input type="text" id="logfullname" placeholder="logusername"/>
+                <input type="password" id="logpassword" placeholder="logpassword"/>
                 <button onclick="UsersignIn()">login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
               </form>
@@ -102,8 +100,8 @@
           </form>
           <form class="login-form">
             <h3>Organization</h3>
-            <input type="text" placeholder="username"/>
-            <input type="password" placeholder="password"/>
+            <input type="text" id="orglogusername" placeholder="orglogusername"/>
+            <input type="password" id="orglogpassword" placeholder="orglogpassword"/>
             <button onclick="OrgsignIn()">login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
           </form>
@@ -151,5 +149,6 @@
      </script>
 
     <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>

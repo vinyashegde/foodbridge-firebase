@@ -5,6 +5,13 @@
   <title>TheFoodBridge</title>
   <link rel="stylesheet" href="food.css">
 
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database-compat.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -26,7 +33,7 @@
       <div class="hero-content">
         <h1 class="hero-header">No poverty, save <span style="color: white;">hunger</span></h1>
         <p class="hero-paragraph">We address the issue of food waste in catering services, hotels, and marriages by donating it to those in need and engaging youth volunteers to participate. Additionally, we aim to make use of spoiled food by converting it into chemical-free manure for agriculture.</p>
-        <button class="hero-button">Support Our Mission</button>
+        <button class="hero-button" onClick="parent.location='login.html'">Support Our Mission</button>
       </div>
     </section>
   </div>

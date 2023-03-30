@@ -39,13 +39,27 @@ const OrgsignUp = () => {
       database_ref.child("org/" + user.uid).set(user_data)
 
       console.log(result);
-      M.toast({ html: `Organisation Registered Successfully`, classes: "green" });
+      // M.toast({ html: `Organisation Registered Successfully`, classes: "green" });
+      Toastify({
+        text: "Organization SignedUp Successfully",
+        className: "info",
+        style: {
+          background: "green",
+        }
+      }).showToast();
       // ...
     })
     .catch((error) => {
       console.log(error.code);
       console.log(error.message);
-      M.toast({ html: error.message, classes: "red" });
+      // M.toast({ html: error.message, classes: "red" });
+      Toastify({
+        text: error.message,
+        className: "info",
+        style: {
+          background: "red",
+        }
+      }).showToast();
       // ..
     });
 
@@ -54,22 +68,38 @@ const OrgsignUp = () => {
   //password.value=""
 };
 
+
+
+
 //Organization sign in
 const OrgsignIn = () => {
-  const orgemail = document.getElementById("orgemail").value;
-  const orgpassword = document.getElementById("orgpassword").value;
+  const orgemail = document.getElementById("orglogusername").value;
+  const orgpassword = document.getElementById("orglogpassword").value;
   firebase.auth().signInWithEmailAndPassword(orgemail, orgpassword)
     .then((result) => {
       // Signed in
       //   document.write("Your Signed In")
       console.log(result);
-      M.toast({ html: `Organization LoggedIn Successfully`, classes: "green" });
+      Toastify({
+        text: "Organization LoggedIn Successfully",
+        className: "info",
+        style: {
+          background: "green",
+        }
+      }).showToast();
       // ...
     })
     .catch((error) => {
       console.log(error.code);
       console.log(error.message);
-      M.toast({ html: error.message, classes: "red" });
+      // M.toast({ html: error.message, classes: "red" });
+      Toastify({
+        text: error.message,
+        className: "info",
+        style: {
+          background: "red",
+        }
+      }).showToast();
     });
 
   //emptying the values in email and pass
@@ -106,13 +136,27 @@ const UsersignUp = () => {
         database_ref.child("users/" + user.uid).set(user_data)
   
         console.log(result);
-        M.toast({ html: `User Registered Successfully`, classes: "green" });
+        // M.toast({ html: `User Registered Successfully`, classes: "green" });
+        Toastify({
+          text: "User SignedUp Successfully",
+          className: "info",
+          style: {
+            background: "green",
+          }
+        }).showToast();
         // ...
       })
       .catch((error) => {
         console.log(error.code);
         console.log(error.message);
-        M.toast({ html: error.message, classes: "red" });
+        // M.toast({ html: error.message, classes: "red" });
+        Toastify({
+          text: error.message,
+          className: "info",
+          style: {
+            background: "red",
+          }
+        }).showToast();
         // ..
       });
   
@@ -123,20 +167,34 @@ const UsersignUp = () => {
   
   //Organization sign in
   const UsersignIn = () => {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("logfullname").value;
+    const password = document.getElementById("logpassword").value;
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((result) => {
         // Signed in
         //   document.write("Your Signed In")
         console.log(result);
-        M.toast({ html: `User LoggedIn Successfully`, classes: "green" });
+        // M.toast({ html: `User LoggedIn Successfully`, classes: "green" });
+        Toastify({
+          text: "User LoggedIn Successfully",
+          className: "info",
+          style: {
+            background: "green",
+          }
+        }).showToast();
         // ...
       })
       .catch((error) => {
         console.log(error.code);
         console.log(error.message);
-        M.toast({ html: error.message, classes: "red" });
+        // M.toast({ html: error.message, classes: "red" });
+        Toastify({
+          text: error.message,
+          className: "info",
+          style: {
+            background: "red",
+          }
+        }).showToast();
       });
   
     //emptying the values in email and pass
@@ -147,6 +205,13 @@ const UsersignUp = () => {
 
 function logOut() {
   firebase.auth().signOut();
+  Toastify({
+    text: "Signed Out",
+    className: "info",
+    style: {
+      background: "grey",
+    }
+  }).showToast();
 }
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -154,6 +219,13 @@ firebase.auth().onAuthStateChanged((user) => {
     console.log(user);
   } else {
     console.log("signout success");
-    M.toast({ html: `Signed Out` });
+    // M.toast({ html: `Signed Out` });
+    // Toastify({
+    //   text: "Signed Out",
+    //   className: "info",
+    //   style: {
+    //     background: "grey",
+    //   }
+    // }).showToast();
   }
 });
