@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database-compat.js"></script>
+    
+
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+            grid-template-rows: 0.7fr 2.5fr 1.2fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+        .div1 {
+            grid-area: 1 / 1 / 2 / 5;
+        }
+    
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+    
+        .div3 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    
+        .div4 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+    
+        .div5 {
+            grid-area: 2 / 4 / 3 / 5;
+        }
+    
+        .div6 {
+            grid-area: 3 / 1 / 4 / 5;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <div class="navbar">
+            <div class="logo-icon"><img src="https://cdn.discordapp.com/attachments/1086598800191275069/1086654421880029234/THRIVE_FOODS-removebg-preview_1.png" alt="Girl in a jacket" width="500" height="600"></div>
+            <a href="food.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact us</a>
+            <a href="#" onclick="return logOut();">Logout</a>
+            <div class="profile-icon"><img src="https://cdn.discordapp.com/attachments/1086598800191275069/1086667073138216960/Rectangle_47.png" alt="Girl in a jacket" width="500" height="600"></div>
+          </div>
+      </div>
+    <div class="div2"> </div>
+    <div class="div3"> 
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <h3>User</h3>
+                <input type="text" id="fullname" placeholder="name"/>
+                <input type="text" id="email" placeholder="email address"/>
+                <input type="text" id="location" placeholder="location"/>
+                <input type="password" id="password" placeholder="password"/>
+                <button onclick="UsersignUp()">create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <h3>User</h3>
+                <input type="text" id="fullname" placeholder="username"/>
+                <input type="password" id="password" placeholder="password"/>
+                <button onclick="UsersignIn()">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="div4"> <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <h3>Organization</h3>
+            <input type="text" id="orgfullname" placeholder="name"/>
+                <input type="text" id="orgemail" placeholder="email address"/>
+                <input type="text" id="orglocation" placeholder="location"/>
+                <input type="password" id="orgpassword" placeholder="password"/>
+            <button onclick="OrgsignUp()">create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <h3>Organization</h3>
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button onclick="OrgsignIn()">login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div></div>
+    <div class="div5"> </div>
+      <div class="div6">
+        <footer>
+            <div class="container-footer">
+              <div class="row-footer">
+                <div class="col-footer col-left">
+                  <div class="logo-footer">
+                    <img src="https://cdn.discordapp.com/attachments/1086598800191275069/1086654421880029234/THRIVE_FOODS-removebg-preview_1.png" alt="Logo">
+                    <p>From the student By the students For the students</p>
+                  </div>
+                </div>
+                <div class="col-footer col-center">
+                  <h3>Contact Us</h3>
+                  <p>Phone: 123-456-7890</p>
+                  <p>Email: example@gmail.com</p>
+                  <nav>
+                    <a href="#" style="color: black;">Any queries?</a>
+                  </nav>
+                </div>
+                <div class="col-footer col-right">
+                  <h3>Address</h3>
+                  <p>City, State 12345</p>
+                  <p>123 Main Street</p>
+                </div>
+              </div>
+            </div>
+            <div class="copy-footer">
+              <p>Created by GDSC PHCET</p>
+            </div>
+          </footer>
+      
+          
+      </div>
+    </div>
+
+    
+    <script>
+        $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
+     </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

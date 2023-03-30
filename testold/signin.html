@@ -20,6 +20,7 @@
 
   <div class="row">
     <div class="col s6"><div class="form">
+      <h5><b>User</b></h5>
       <!-- Email  -->
       <div class="email">
         <label for="email">Email</label>
@@ -31,7 +32,7 @@
         />
       </div>
       <!-- passWord -->
-      <div class="pass">
+      <div class="password">
         <label for="password">Password</label>
         <input
           type="password"
@@ -43,64 +44,39 @@
 
       <!-- Sign Up button -->
       <button id="submit-btn" onclick="UsersignIn()">Sign In</button>
-      <button id="submit-btn" onclick="logOut()">Logout</button>
+      <!-- <button id="submit-btn" onclick="logOut()">Logout</button> -->
     </div></div>
+
     <div class="col s6"><div class="form">
+      <h5><b>Organization</b></h5>
       <!-- Email  -->
-      <div class="email">
-        <label for="email">Email</label>
+      <div class="orgemail">
+        <label for="orgemail">Email</label>
         <input
-          type="email"
-          name="email"
-          id="email"
+          type="orgemail"
+          name="orgemail"
+          id="orgemail"
           placeholder="Write your email"
         />
       </div>
       <!-- passWord -->
-      <div class="pass">
-        <label for="password">Password</label>
+      <div class="orgpassword">
+        <label for="orgpassword">Password</label>
         <input
-          type="password"
-          name="password"
-          id="password"
+          type="orgpassword"
+          name="orgpassword"
+          id="orgpassword"
           placeholder="password"
         />
       </div>
 
       <!-- Sign Up button -->
-      <button id="submit-btn" onclick="signIn()">Sign In</button>
-      <button id="submit-btn" onclick="logOut()">Logout</button>
+      <button id="submit-btn" onclick="OrgsignIn()">Sign In</button>
+      <!-- <button id="submit-btn" onclick="logOut()">Logout</button> -->
     </div></div>
   </div>
 
-    <div class="form">
-        <!-- Email  -->
-        <div class="email">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Write your email"
-          />
-        </div>
-        <!-- passWord -->
-        <div class="pass">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-          />
-        </div>
-  
-        <!-- Sign Up button -->
-        <button id="submit-btn" onclick="signIn()">Sign In</button>
-        <button id="submit-btn" onclick="logOut()">Logout</button>
-      </div>
-  
-
+    
       <script src="app.js"></script>
 </body>
 </html>
