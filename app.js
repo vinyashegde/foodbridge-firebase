@@ -172,6 +172,7 @@ const UsersignUp = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((result) => {
         // Signed in
+        getuserInfo(user.uid)
         //   document.write("Your Signed In")
         console.log(result);
         // M.toast({ html: `User LoggedIn Successfully`, classes: "green" });
@@ -234,18 +235,24 @@ firebase.auth().onAuthStateChanged((user) => {
 // function for showing user details in user profile
 const userDetails = document.querySelector('.user-info')
 async function getuserInfo(userID){
-  const userInfoSnap = await firebase.firestore()
-  .collection('users')
-  .doc(userID)
-  .get()
+  if(userID){
+    const userInfoSnap = await firebase.firestore()
+    .collection('users')
+    .doc(userID)
+    .get()
 
-  const userInfo = userInfoSnap.data()
-  if(userInfo){
+    const userInfo = userInfoSnap.data()
+    if(userInfo){
+      userDetails.innerHTML = `
+      <h3>${userInfo.fullname}</h3>
+      <h3>${userInfo.email}</h3>
+      <h3>${userInfo.location}</h3>
+      `
+    }
+  }else{
     userDetails.innerHTML = `
-    <h3>${userInfo.fullname}</h3>
-    <h3>${userInfo.email}</h3>
-    <h3>${userInfo.location}</h3>
-    `
+      <h3>Please login</h3>
+      `
   }
 }
 
