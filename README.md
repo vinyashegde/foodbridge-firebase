@@ -22,7 +22,7 @@ You can checkout our video submission demo on youtube by clicking on the snapsho
 │   ├───contact us
 │   └───profile
 |
-├───donatioms
+├───donations
 │
 ├───sign in
 │
