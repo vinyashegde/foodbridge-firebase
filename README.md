@@ -43,17 +43,13 @@ All the design/mockups for the app have been added in the `designs` directory. Y
 
 ##### Clone the repository
 ```bash
-git clonehttps://github.com/Exar04/TheFoodBridge
+git clonehttps://github.com/vinyashegde/foodbridge-firebase
 ```
   ##### Move to the desired folder
 ```bash
 cd \Google-DSC-Solution-Challenge
 ```
 
-  ##### To run the app, simply write
-```bash
-flutter run
-```
 ## About us
 
 Ending world hunger may seem like a big challenge, but sharing the excess food is a goal that can be achieved. Keeping this in mind, a team of four student developers from Pillai HOC College of Engineering and Technology, Navi Mumbai, worked throughout March to solve a concerning problem by leveraging tech.
