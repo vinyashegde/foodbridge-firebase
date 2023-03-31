@@ -9,7 +9,7 @@ The Food Bridge is a website built using Firebase that aims to address the issue
 <br>
 
 ### Video Submission 
-You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission demo on youtube by clicking on the snapshot below.
+You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission demo on youtube.
 
 ### Project Info
 ```
