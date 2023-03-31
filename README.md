@@ -2,7 +2,7 @@
 # The Food Bridge
 A Google DSC Solution Challenge 2023 Submission
 
-The Food Bridge is a website built using Firebase that aims to address the issue of food waste in catering services, hotels, and marriages by donating surplus food to those in need, converting stale food into manure for farming, and engaging youth volunteers to participate
+The Food Bridge is a <a href="https://thefoodbridge.web.app">website</a> built using Firebase that aims to address the issue of food waste in catering services, hotels, and marriages by donating surplus food to those in need, converting stale food into manure for farming, and engaging youth volunteers to participate.
 <br>
 
 ![](https://cdn.discordapp.com/attachments/1086598800191275069/1091090161955246181/Screenshot_2023-03-31_012945.jpg)
@@ -29,8 +29,6 @@ You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission
 └───queries
 ```
 
-#### Designs
-All the design/mockups for the app have been added in the `designs` directory. You can use those for reference.
 ### Description
 
 - For the backend, we mostly relied on Firebase, as it was easier to integrate with frontend, without any hassle to manage & create instances of our server.
