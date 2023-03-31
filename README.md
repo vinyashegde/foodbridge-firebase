@@ -35,7 +35,7 @@ You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission
 
 - Other backend leavereges are node JS.
 
-- For frontend, we have used  HTML,  CSS,  JavaScript
+- For frontend, we have used  HTML,  CSS,  Vanilla JavaScript
 
 # Setup
 
