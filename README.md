@@ -9,7 +9,7 @@ The Food Bridge is a website built using Firebase that aims to address the issue
 <br>
 
 ### Video Submission 
-You can checkout our video submission demo on youtube by clicking on the snapshot below.
+You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission demo on youtube by clicking on the snapshot below.
 
 ### Project Info
 ```
@@ -60,7 +60,7 @@ Our website primarily deals with the welfare and agriculture sectors. Some food 
 
 <p align="left">
 <a href="https://github.com/vinyashegde">Vinyas Hegde</a> |
-<a href="https://github.com/ketakii-15">Ketaki Limaiye</a> |
+<a href="https://github.com/ketakii-15">Ketaki Limaye</a> |
 <a href="https://github.com/MissKMirza">Kulsum Mirza</a> |
 <a href="https://github.com/Exar04">Yash Dhadve</a> |
 </p>
