@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database-compat.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col s6"><div class="form">
+      <h5><b>User</b></h5>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="password">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="UsersignIn()">Sign In</button>
+      <!-- <button id="submit-btn" onclick="logOut()">Logout</button> -->
+    </div></div>
+
+    <div class="col s6"><div class="form">
+      <h5><b>Organization</b></h5>
+      <!-- Email  -->
+      <div class="orgemail">
+        <label for="orgemail">Email</label>
+        <input
+          type="orgemail"
+          name="orgemail"
+          id="orgemail"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="orgpassword">
+        <label for="orgpassword">Password</label>
+        <input
+          type="orgpassword"
+          name="orgpassword"
+          id="orgpassword"
+          placeholder="password"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="OrgsignIn()">Sign In</button>
+      <!-- <button id="submit-btn" onclick="logOut()">Logout</button> -->
+    </div></div>
+  </div>
+
+    
+      <script src="app.js"></script>
+</body>
+</html>

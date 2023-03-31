@@ -1,13 +1,23 @@
 // setting firebase
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyD1FWsHvue2G4JnFdDL6EvSYrKJ4uV0eQw",
   authDomain: "foodbridge-6a85e.firebaseapp.com",
+  databaseURL: "https://foodbridge-6a85e-default-rtdb.firebaseio.com",
   projectId: "foodbridge-6a85e",
   storageBucket: "foodbridge-6a85e.appspot.com",
   messagingSenderId: "445260306945",
-  appId: "1:445260306945:web:cb42789eee6467d52fbe00",
+  appId: "1:445260306945:web:37ca4f3eac2066fb2fbe00",
+  measurementId: "G-7KQDP3E87K"
 });
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 const database = firebaseApp.database();
 const auth = firebaseApp.auth();
 
