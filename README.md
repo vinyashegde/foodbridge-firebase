@@ -60,5 +60,5 @@ Our website primarily deals with the welfare and agriculture sectors. Some food 
 <a href="https://github.com/vinyashegde">Vinyas Hegde</a> |
 <a href="https://github.com/ketakii-15">Ketaki Limaye</a> |
 <a href="https://github.com/MissKMirza">Kulsum Mirza</a> |
-<a href="https://github.com/Exar04">Yash Dhadve</a> |
+<a href="https://github.com/Exar04">Yash Dhadve</a>
 </p>
