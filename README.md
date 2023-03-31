@@ -1,6 +1,6 @@
 
 # The Food Bridge
-A Google DSC Solution Challenge submission
+A Google DSC Solution Challenge 2023 Submission
 
 The Food Bridge is a website built using Firebase that aims to address the issue of food waste in catering services, hotels, and marriages by donating surplus food to those in need, converting stale food into manure for farming, and engaging youth volunteers to participate
 <br>
