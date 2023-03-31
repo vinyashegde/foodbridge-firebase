@@ -56,7 +56,7 @@ Ending world hunger may seem like a big challenge, but sharing the excess food i
 
 Our website primarily deals with the welfare and agriculture sectors. Some food by many can fill one's stomach! We're here to make that happen. The Food Bridge, bridging the gap between food waste and hunger with sustainable agriculture.
 
-##### Made with care by 
+##### ❤ Made with care by 
 
 <p align="left">
 <a href="https://github.com/vinyashegde">Vinyas Hegde</a> |
