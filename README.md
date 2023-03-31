@@ -33,7 +33,7 @@ You can <a href="https://youtu.be/tIK5ZhBPDkQ">checkout</a> our video submission
 
 - For the backend, we mostly relied on Firebase, as it was easier to integrate with frontend, without any hassle to manage & create instances of our server.
 
-- Other backend leavereges are Express JS,  node JS.
+- Other backend leavereges are node JS.
 
 - For frontend, we have used  HTML,  CSS,  JavaScript
 
