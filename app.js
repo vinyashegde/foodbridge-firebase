@@ -258,6 +258,17 @@ firebase.auth().onAuthStateChanged((user) => {
 //   }
 // }
 
+function getuserData()
+{
+  var fullname = document.getElementById('fullname').value
 
+  var user_ref = database.ref().child('users/' + fullname)
+  user_ref.on('value',function(snapshot){
+    var data = snapshot.val()
+
+    console.log(data);
+    alert(data.email)
+  })
+}
 
 
