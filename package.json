@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vinyashegde/foodbridge-firebase/issues"
   },
-  "homepage": "https://github.com/vinyashegde/foodbridge-firebase#readme"
+  "homepage": "https://github.com/vinyashegde/foodbridge-firebase#readme",
+  "dependencies": {
+    "firebase": "^9.19.1"
+  }
 }

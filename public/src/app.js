@@ -1,6 +1,4 @@
-// setting firebase
-
-
+//setup
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyD1FWsHvue2G4JnFdDL6EvSYrKJ4uV0eQw",
   authDomain: "foodbridge-6a85e.firebaseapp.com",
@@ -8,8 +6,8 @@ const firebaseApp = firebase.initializeApp({
   projectId: "foodbridge-6a85e",
   storageBucket: "foodbridge-6a85e.appspot.com",
   messagingSenderId: "445260306945",
-  appId: "1:445260306945:web:37ca4f3eac2066fb2fbe00",
-  measurementId: "G-7KQDP3E87K"
+  appId: "1:445260306945:web:b6408ba89e9127a42fbe00",
+  measurementId: "G-5JQHHR8VYN"
 });
 
 
@@ -261,6 +259,17 @@ firebase.auth().onAuthStateChanged((user) => {
 //   }
 // }
 
+// function getuserData()
+// {
+//   var fullname = document.getElementById('fullname').value
 
+//   var user_ref = database.ref().child('users/' + fullname)
+//   user_ref.on('value',function(snapshot){
+//     var data = snapshot.val()
+
+//     console.log(data);
+//     alert(data.email)
+//   })
+// }
 
 
